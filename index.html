@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Basic usage demo">
+<meta name="author" content="David Deutsch">
+<title> Galeria </title>
+
+<!-- Stylesheets -->
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="assets/css/docs.theme.min.css">
+
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- stilos -->
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/galeria-modal.css" rel="stylesheet">
+
+<!-- javascript --> 
+<script src="assets/vendors/jquery.min.js"></script> 
+<script src="assets/owlcarousel/owl.carousel.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark  bg-menu"> <a class="navbar-brand" href="#">Galeria</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  </nav>
+</header>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active"> <img class="first-slide" src="assets/imagens/11.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption text-left"> </div>
+      </div>
+    </div>
+    <div class="carousel-item"> <img class="second-slide" src="assets/imagens/12.jpg" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption text-left"> </div>
+      </div>
+    </div>
+    <div class="carousel-item"> <img class="third-slide" src="assets/imagens/13.jpg" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption text-left"> </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Voltar</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Avançar</span> </a> </div>
+<div class="container">
+<section id="demos">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="owl-carousel owl-theme">
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/1.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(1)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/2.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(2)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/3.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(3)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/4.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(4)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/5.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(5)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/6.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(6)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/7.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(6)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/8.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(6)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/9.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(6)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-4 shadow-sm"> <img class="card-img-top size-img"  src="assets/imagens/10.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal();currentSlide(6)">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="ModalGaleria" class="modal"> <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="assets/imagens/1.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="assets/imagens/2.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="assets/imagens/3.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="assets/imagens/4.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="assets/imagens/5.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="assets/imagens/6.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="assets/imagens/7.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="assets/imagens/8.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="assets/imagens/9.jpg" style="width:100%"> </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="assets/imagens/10.jpg" style="width:100%"> </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>Galeria 2020</p>
+  </footer>
+</div>
+<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 3
+                  }
+                }
+              })
+            })
+          </script> 
+
+<!-- vendors --> 
+<script src="assets/vendors/highlight.js"></script> 
+<script src="assets/js/app.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/galeria.js"></script>
+</body>
+</html>
